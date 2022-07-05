@@ -2,7 +2,9 @@
 
 name: Generate Snake
 
-on: [push, pull_request]
+on:
+  schedule:
+    - cron: "11 1 * * 1"
 
 jobs:
   build:
